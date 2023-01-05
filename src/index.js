@@ -12,7 +12,7 @@ import { ToastContainer } from 'react-toastify';
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <CookiesProvider>
-      {/* <ToastContainer
+      <ToastContainer
       position="top-center"
       autoClose={1000}
       hideProgressBar={false}
@@ -23,7 +23,7 @@ root.render(
       draggable
       pauseOnHover
       theme="light"
-    /> */}
+    />
       <BrowserRouter>
         <Provider store={configureStore()}>
           <PageRouters />
