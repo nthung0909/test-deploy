@@ -11,26 +11,25 @@ import { ToastContainer } from 'react-toastify';
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
-  <>hello word</>,
-    // <CookiesProvider>
-    //   <ToastContainer
-    //   position="top-center"
-    //   autoClose={1000}
-    //   hideProgressBar={false}
-    //   newestOnTop={false}
-    //   closeOnClick
-    //   rtl={false}
-    //   pauseOnFocusLoss
-    //   draggable
-    //   pauseOnHover
-    //   theme="light"
-    // />
-    //   <BrowserRouter>
-    //     <Provider store={configureStore()}>
-    //       <PageRouters />
-    //     </Provider>
-    //   </BrowserRouter>
-    // </CookiesProvider>,
+    <CookiesProvider>
+      {/* <ToastContainer
+      position="top-center"
+      autoClose={1000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="light"
+    /> */}
+      <BrowserRouter>
+        <Provider store={configureStore()}>
+          <PageRouters />
+        </Provider>
+      </BrowserRouter>
+    </CookiesProvider>,
 )
 
 // If you want to start measuring performance in your app, pass a function
